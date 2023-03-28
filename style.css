@@ -30,8 +30,8 @@ body {
   padding: 20px 40px;
   background-color: #333;
   color: #fff;
-  text-decoration: none;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 .prev-chapter:hover,
