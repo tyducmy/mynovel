@@ -42,8 +42,8 @@ body {
 @media (max-width: 600px) {
   body {
     text-align: left;
-    font-size: auto;
-    margin-left: 6vw;
+    font-size: 5vw;
+    margin-left: 5vw;
     margin-right: 5vw;
     line-height: 150%;
   }
