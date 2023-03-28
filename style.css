@@ -22,7 +22,6 @@ body {
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  margin-left: 15%;
 }
 
 .next-chapter {
@@ -43,7 +42,7 @@ body {
 @media (max-width: 600px) {
   body {
     text-align: left;
-    font-size: 5vw;
+    font-size: 4vw;
     margin-left: 5vw;
     margin-right: 5vw;
     line-height: 150%;
