@@ -50,6 +50,7 @@ body {
   }
 }
 
+/* kích thước màn hình lớn hơn 600px */
 @media (min-width: 601px) {
   body {
     text-align: left;
