@@ -8,8 +8,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+        function changeChapter() {
+          const chapter = document.getElementById("truyen").value;
+          window.location.href = "truyen" + chapter + ".html";
+          if(chapter==0){
+            window.location.href = "index.html";
+          }
+        }
+      </script>
+    <form>
+        <label for="truyen">Chuyển đến chương:</label>
+        <select id="truyen">
+            <option value="0">Chương 1</option>
+          <option value="1">Chương 2</option>
+          <option value="2">Chương 3</option>
+          <option value="3">Chương 4</option>
+          <option value="4">Chương 5</option>
+        </select>
+        <button type="button" onclick="changeChapter()">Chuyển đến</button>
+      </form>
     <h1 style="text-align: center;line-height: 150%;" >Chương 4</h1>
     <p style="text-align: center;">---------------------</p>
+    <div class="nav-buttons">
+        <a href="truyen2.html" class="prev-chapter">&lt;&lt; Chương trước</a>
+        <a href="truyen4.html" class="next-chapter">Chương sau &gt;&gt;</a>
+      </div>
         <br>Căn phòng đổ nát nơi hắn từng trú ngụ cất chứa rất nhiều thứ mà hắn đã thu nhặt được, hoặc tồi tệ hơn là cướp được. Trong đống đồ vương vãi khắp căn phòng ấy có một vài thứ làm tôi hứng thú: một tấm bản đồ phía tây nước Nga, một cái la bàn nhỏ cầm tay, một chiếc xe đạp còn khá mới và chiếc rìu dính máu trên tay của kẻ điên ấy. Những thứ này có thể giúp ích cho tôi về sau. Thắt chiếc rìu vào quai balo và xác định vị trí của khu quân sự thành phố bằng tấm bản đồ và chiếc la bàn, tôi rời khỏi căn nhà ấy và tiến vào thành phố trên con xe đạp “chiến lợi phẩm” mà mình vừa lấy được…
         <br>Thành phố Muram không giống những gì mà tôi tưởng tượng… Nơi đây chỉ còn là một đống hoang tàn. Điện và nước đều đã bị ngắt từ lâu và xác người nằm rải rác mọi nơi: trên đường phố, trong nhà, sâu trong từng con hẻm… Có thể trại tập trung di tản của quân đội trong thành phố sẽ có manh mối nào đó giải thích được nguyên nhân dẫn đến những cái chết ở đây và lí do đằng sau sự sống sót thần kì của bản thân tôi. Trên tờ giấy di tản ở Delos tôi có thấy ảnh vẽ của khu quân sự Muram, có một chi tiết đã làm tôi chú ý: chiếc cột ăng-ten cao chót vót ở phía góc ảnh, và ngay hướng nam cách đây không xa cũng có một chiếc cột y như thế. Con đường nhựa hướng về phía trại tập trung lỗ chỗ những hố bom, một số chiếc xe còn xót lại trên đường đã bị hư hỏng quá nặng để có thể di chuyển được và xác chết trên đường đi thì hiện ra mỗi lúc một nhiều…
         <br>Với phương tiện di chuyển mới, tôi chả mất bao lâu để đạp xe từ ngoại ô thành phố phía Bắc để đến được rìa phía Nam thành phố. trên đường đi băng qua trung tâm thành phố để tới khu quân sự, tôi để ý thấy nơi đây cũng bị tàn phá không kém gì những thành phố khác mà tôi đã đi qua, có phần còn tồi tệ hơn. Những hố bom to tướng phá hủy và dường như xóa sổ những căn nhà cao tầng xấu số, chỉ còn thấy vài cột trụ thép với ít bê tông còn dính lại được trên đó và những mảnh vụn của gạch ngói.
@@ -40,7 +64,7 @@
           color: #fff;
           text-decoration: none;
           border-radius: 5px;
-         
+
         }
         .next-chapter {
           display: inline-block;

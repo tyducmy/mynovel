@@ -8,8 +8,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+        function changeChapter() {
+          const chapter = document.getElementById("truyen").value;
+          window.location.href = "truyen" + chapter + ".html";
+          if(chapter==0){
+            window.location.href = "index.html";
+          }
+        }
+      </script>
+    <form>
+        <label for="truyen">Chuyển đến chương:</label>
+        <select id="truyen">
+            <option value="0">Chương 1</option>
+          <option value="1">Chương 2</option>
+          <option value="2">Chương 3</option>
+          <option value="3">Chương 4</option>
+          <option value="4">Chương 5</option>
+        </select>
+        <button type="button" onclick="changeChapter()">Chuyển đến</button>
+      </form>
     <h1 style="text-align: center;line-height: 150%;" >Chương 2</h1>
     <p style="text-align: center;">---------------------</p>
+    <div class="nav-buttons">
+        <a href="index.html" class="prev-chapter">&lt;&lt; Chương trước</a>
+        <a href="truyen2.html" class="next-chapter">Chương sau &gt;&gt;</a>
+      </div>
     Tôi dừng lại ở ven bìa một cánh rừng gần đó, khác hẳn với lúc mà tôi còn ở trong thành phố, bầu không khí nơi đây thật dễ chịu và yên tĩnh. Tiếng sói tru văng vẳng ở phía bên kia cánh rừng. Quá mệt để có thể đi tiếp nên tôi quyết định đốt một đống lửa nhỏ để xua đuổi bầy thú và nghỉ chân. Âm thanh xào xạc của lá cùng với những cơn gió mát đã làm tôi thiếp đi lúc nào không hay. Ngủ trên nền đất chả mấy dễ chịu nhưng ít ra thì đống lửa mang cho tôi cảm giác ấm áp. Chả có ai, hay là thứ gì làm phiền giấc ngủ của tôi cả…. Có lẽ là vậy.
     <br>Sáng hôm sau, sau vài giờ thì tôi đã đến được phía bên kìa của cánh rừng. Cách tôi không xa là một tấm biển chỉ đường. Tên của khu trường học mà tôi vừa đọc được khi nãy và đường đi đến đấy hiện trên tấm biển. Từ chỗ tôi đến đấy cách nhau một ngọn đồi. Có lẽ mọi người vẫn đang ở đấy. Tôi hi vọng. Tôi cần phải đến đó để tìm cho ra câu trả lời cho những câu hỏi trong đầu tôi, những chuyện mà tôi trải qua và thứ quái dị mà tôi đã thấy và khu trường học có lẽ sẽ giải đáp được những thắc mắc đó…
     <br>Sau khi băng qua hết dãy đồi và đến gần hơn với khu trường học, tôi ngờ ngợ nhận ra, rằng có gì đó không bình thường: chả có ai ở đây cả, chả lẽ mọi người đều đã rời đi hay sao? Tiến vào trong khu cách li, một tấm bảng ghi lại lịch trình sơ tán được cắm ngay ở khu trung tâm. Tất cả mọi chuyến tàu di tản đều hướng đến duy nhất về 1 địa điểm. Hình như mọi người đã rời thành phố Delos để lên tàu di tản đến thành phố Muram - một thành phố hiện đại với những bệnh viện lớn và nhiều nhu yếu phẩm hơn. Tôi quay ra khỏi khu cách li và lần mò đi theo đường ray, tiến về hướng đông để đến Muram, hi vọng rằng mình sẽ tìm được câu trả lời thỏa đáng. Sau một hồi đi men theo đường ray, tôi nhìn thấy một chiếc xe gòng đẩy tay cũ bị truợt ra khỏi đường ray. Có lẽ thứ này sẽ giúp tôi tiến về phía thành phố nhanh hơn. Tôi liền đẩy chiếc gòng vào lại trong đường ray. Dẫu vẻ bề ngoài nhìn có vẽ như đã cũ nát, nhưng khi tôi đẩy cần gạt thì nó lại lướt về trước một cách mượt mà. Tôi chắc chắn sẽ đến được Muram nhanh hơn với thứ này so với đi bộ bằng hai chân. Tôi đã quyết định lên xe…
@@ -39,6 +63,7 @@
           color: #fff;
           text-decoration: none;
           border-radius: 5px;
+
         }
         .next-chapter {
           display: inline-block;

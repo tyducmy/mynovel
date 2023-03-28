@@ -9,9 +9,33 @@
 </head>
 
 <body>
+    <script>
+        function changeChapter() {
+          const chapter = document.getElementById("truyen").value;
+          window.location.href = "truyen" + chapter + ".html";
+          if(chapter==0){
+            window.location.href = "index.html";
+          }
+        }
+      </script>
+    <form>
+        <label for="truyen">Chuyển đến chương:</label>
+        <select id="truyen">
+            <option value="0">Chương 1</option>
+          <option value="1">Chương 2</option>
+          <option value="2">Chương 3</option>
+          <option value="3">Chương 4</option>
+          <option value="4">Chương 5</option>
+        </select>
+        <button type="button" onclick="changeChapter()">Chuyển đến</button>
+      </form>
     <title>Đọc truyện chữ</title>
-	<h1 style="text-align: center;line-height: 150%;" >Chương 1</h1>
+	<h1 style="text-align: center;line-height: 150%;" >Tiêu đề truyện: chưa nghĩ ra</h1>
+    <h1 style="text-align: center;line-height: 150%;" >Chương 1</h1>
         <p style="text-align: center;">---------------------</p>
+        <div class="nav-buttons">
+            <a style="margin-left: 15%;" href="truyen1.html" class="next-chapter">Chương sau&gt;&gt;</a>
+          </div>
         <br>Tôi tỉnh dậy ở giữa một con phố hoang tàn và vắng tanh, không có một bóng người. Trên người không một mảnh vải che thân và cơ 
         thể thì đau nhức. Tôi không nhớ được là mình đang ở đâu, hay tôi là ai? Tôi... chả thể nhớ được gì… thậm chí là tên của chính mình... Tôi chống hai tay xuống đất và cố gắng chồm dậy.
         

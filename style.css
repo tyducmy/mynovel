@@ -1,21 +1,22 @@
-body{
+body {
   text-align: left;
-  font-size: 3vw;
+  font-size: auto;
   margin-left: 15vw;
   margin-right: 15vw;
   line-height: 125%;
 
-  
-  
+
+
 }
+
 .nav-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.prev-chapter{
-    display: inline-block;
+.prev-chapter {
+  display: inline-block;
   padding: 20px 40px;
   background-color: #333;
   color: #fff;
@@ -23,6 +24,7 @@ body{
   border-radius: 5px;
   margin-left: 15%;
 }
+
 .next-chapter {
   display: inline-block;
   padding: 20px 40px;
@@ -37,4 +39,24 @@ body{
 .next-chapter:hover {
   background-color: #555;
 }
-  
+
+@media (max-width: 600px) {
+  body {
+    text-align: left;
+    font-size: auto;
+    margin-left: 6vw;
+    margin-right: 5vw;
+    line-height: 150%;
+  }
+}
+
+/* kích thước màn hình lớn hơn 600px */
+@media (min-width: 601px) {
+  body {
+    text-align: left;
+    font-size: 3vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    line-height: 125%;
+  }
+}
