@@ -58,3 +58,8 @@ body {
     line-height: 125%;
   }
 }
+iframe {
+  border: none;  
+  align-items: center;
+}
+

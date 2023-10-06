@@ -1,0 +1,43 @@
+
+<style>
+    @media (max-width: 600px) {
+  form {
+    text-align: left;
+    font-size: 5.5vw;
+    line-height: 150%;
+  }
+}
+
+@media (min-width: 601px) {
+    form {
+    text-align: left;
+    font-size: 4vw;
+    line-height: 125%;
+  }
+}
+</style>
+<script>
+    function changeChapter() {
+  const chapter = document.getElementById("truyen").value;
+
+  if (chapter == 0) {
+    window.parent.location.href = "index.html";
+  } else {
+    window.parent.location.href = "truyen" + chapter + ".html";
+  }
+}
+  </script>
+<form>
+    <label for="truyen">Chuyển đến chương:</label>
+    <select id="truyen">
+        <option value="0">Chương 1</option>
+        <option value="1">Chương 2</option>
+        <option value="2">Chương 3</option>
+        <option value="3">Chương 4</option>
+        <option value="4">Chương 5</option>
+        <option value="5">Chương 6</option>
+        <option value="99">...</option>
+    </select>
+    <button type="button" onclick="changeChapter()">Chuyển đến</button>
+</form>
+

@@ -6,28 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 3</title>
     <link rel="stylesheet" href="style.css">
+    <iframe src="changechapter.html" width="100%"></iframe>
 </head>
 <body>
-    <script>
-        function changeChapter() {
-          const chapter = document.getElementById("truyen").value;
-          window.location.href = "truyen" + chapter + ".html";
-          if(chapter==0){
-            window.location.href = "index.html";
-          }
-        }
-      </script>
-    <form>
-        <label for="truyen">Chuyển đến chương:</label>
-        <select id="truyen">
-            <option value="0">Chương 1</option>
-          <option value="1">Chương 2</option>
-          <option value="2">Chương 3</option>
-          <option value="3">Chương 4</option>
-          <option value="4">Chương 5</option>
-        </select>
-        <button type="button" onclick="changeChapter()">Chuyển đến</button>
-      </form>
+
     <h1 style="text-align: center;line-height: 150%;" >Chương 3</h1>
      <p style="text-align: center;">---------------------</p>
      <div class="nav-buttons">
